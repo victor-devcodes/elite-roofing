@@ -670,6 +670,8 @@ header.sticky{
 
     background:#f8f9fa;
 
+    color: black;
+
     transition:.3s;
 
     border:none;
@@ -1036,9 +1038,71 @@ textarea:focus{
 
 @media (max-width:992px){
 
+.btn .active{
+    visibility:visible;
+}
+.nav-links.active{
+    background: #ff6b00;
+    display:flex;
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.menu-toggle{
+
+    display:block;
+    color: #ffffff;
+
+}
+
+.nav-links{
+
+    flex-direction:column;
+
+    position:absolute;
+
+    top:100px;
+
+    left:0;
+
+    width:100%;
+
+    padding:50px;
+
+    gap:50px;
+
+    display:none;
+
+}
+.navbar .btn{
+    margin-left: 200px;
+}
+
+.nav-links{
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(-20px);
+
+transition:.3s;
+   
+
+}
 .services-grid{
 
 grid-template-columns:repeat(2,1fr);
+
+}
+
+.why-wrapper{
+
+flex-direction: column;
 
 }
 
