@@ -57,7 +57,7 @@ header.sticky{
 
     align-items:center;
 
-    padding:20px 8%;
+    padding:5px 8%;
 
     background:#222;
 
@@ -844,6 +844,11 @@ textarea:focus{
 
 }
 
+.footer-column img{ 
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
 .footer-grid{
 
     display:grid;
@@ -1063,7 +1068,9 @@ grid-template-columns:repeat(2,1fr);
 
 @media (max-width:768px){
 
-
+.logo{
+    font-size: 20px;
+}
 .services-grid{
 
 grid-template-columns:1fr;
@@ -1078,7 +1085,7 @@ grid-template-columns:1fr;
 
 .nav-links{
 
-   opacity:0;
+opacity:0;
 
 visibility:hidden;
 
@@ -1087,6 +1094,14 @@ transform:translateY(-20px);
 transition:.3s;
    
 
+}
+
+
+.navbar .btn{
+    font-size: 12px;
+}
+.btn .active{
+    visibility:visible;
 }
 .nav-links.active{
     background: #ff6b00;
@@ -1104,15 +1119,18 @@ transition:.3s;
 
 .hero h1{
 
-font-size:40px;
+font-size:38px;
 
 }
 
 
 .hero p{
 
-font-size:18px;
+font-size:16px;
 
+}
+.hero-buttons{
+    flex-direction: column;
 }
 
 
@@ -1122,7 +1140,7 @@ font-size:18px;
 
     position:absolute;
 
-    top:80px;
+    top:100px;
 
     left:0;
 
@@ -1130,7 +1148,7 @@ font-size:18px;
 
     padding:30px;
 
-    gap:20px;
+    gap:50px;
 
     display:none;
 
@@ -1182,6 +1200,38 @@ grid-template-columns:1fr;
 
 grid-template-columns:1fr;
 
+}
+
+.section-title h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.why-content h2{
+    font-size: 32px;
+    text-align: center;
+   
+}
+
+.footer-column img{
+    width: 50%;
+    margin-bottom: 30px;
+    margin-left: -20px;
 }
 
 }
